@@ -15,7 +15,10 @@ namespace Capa_Vista_Logistica
         public Maestros()
         {
             InitializeComponent();
+
+
             string idUsuario = Interfac_V3.UsuarioSesion.GetIdUsuario();
+
             string[] alias = { "codigo_maestro", "nombre_maestro", "direccion_maestro", "telefono_maetro", "email_maestro", "Estado" };
             navegador1.AsignarAlias(alias);
             navegador1.AsignarSalida(this);
