@@ -17,6 +17,7 @@ namespace Capa_Vista_Logistica
             InitializeComponent();
 
             string idUsuario = Interfac_V3.UsuarioSesion.GetIdUsuario();
+
             string[] alias = { "codigo_carrera", "nombre_carrera", "codigo_facultad", "Estado" };
             navegador1.AsignarAlias(alias);
             navegador1.AsignarSalida(this);
