@@ -16,8 +16,12 @@ namespace Capa_Vista_Logistica
         {
             InitializeComponent();
 
+
             string idUsuario = Interfac_V3.UsuarioSesion.GetIdUsuario();
+
+
             string[] alias = { "codigo_jornada", "nombre_jornada", "Estado" };
+
             navegador1.AsignarAlias(alias);
             navegador1.AsignarSalida(this);
             navegador1.AsignarColorFondo(Color.FromArgb(218, 247, 245));
